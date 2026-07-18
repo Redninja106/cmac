@@ -1,12 +1,12 @@
 :root {
   color-scheme: light;
-  --background: #dce8f5;
+  --background: #e7e4de;
   --ink: #111111;
   --muted: #4f535d;
   --gold: #b48a34;
   --navy: #173b63;
   --deep: #0d1f35;
-  --card: #ccdff0;
+  --card: #e9e4db;
 }
 
 html {
