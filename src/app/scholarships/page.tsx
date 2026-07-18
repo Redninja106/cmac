@@ -33,38 +33,49 @@ export default function ScholarshipsPage() {
             </tr>
           </tbody>
         </table>
-        <p className="section-label">Eligibility</p>
-        <ol className="eligibility-list">
-          <li>
-            Applying students must be a senior or junior graduating in June
-            2027 from Comsewogue High School.
-          </li>
-          <li>
-            Applying students must be in good standing and free of any school
-            suspension.
-          </li>
-          <li>
-            Applying students MUST have applied to colleges majoring in one of
-            the following fields:
-          </li>
-        </ol>
-        <ul className="eligibility-sublist">
-          <li>
-            MUSIC-related fields (MUSIC – performance, pedagogy, history,
-            theory, composition, education, therapy, business, technology,
-            theater, etc.)
-          </li>
-          <li>
-            ART-related fields (ART – visual arts, history, education, digital
-            arts, fashion, film, etc.)
-          </li>
-          <li>
-            Business and Engineering-related fields (Marketing, Architect)
-          </li>
-        </ul>
+        <table className="scholarship-table">
+          <tbody>
+            <tr>
+              <th scope="row">Eligibility</th>
+              <td>
+                <ol className="table-list">
+                  <li>
+                    Must be a senior or junior graduating in June 2027 from
+                    Comsewogue High School.
+                  </li>
+                  <li>
+                    Must be in good standing and free of any school suspension.
+                  </li>
+                  <li>
+                    Must have applied to colleges majoring in one of the
+                    following fields:
+                    <ul className="table-sublist">
+                      <li>
+                        MUSIC-related fields (performance, pedagogy, history,
+                        theory, composition, education, therapy, business,
+                        technology, theater, etc.)
+                      </li>
+                      <li>
+                        ART-related fields (visual arts, history, education,
+                        digital arts, fashion, film, etc.)
+                      </li>
+                      <li>
+                        Business and Engineering-related fields (Marketing,
+                        Architecture)
+                      </li>
+                    </ul>
+                  </li>
+                </ol>
+              </td>
+            </tr>
+          </tbody>
+        </table>
         <p className="center-link">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLScLSr4Da2R51xg59lu_j57lMg5Xd8On3rHcEowwMgNAB9V1ng/viewform">
-            APPLY FOR SENIOR SCHOLARSHIP
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLScLSr4Da2R51xg59lu_j57lMg5Xd8On3rHcEowwMgNAB9V1ng/viewform"
+            className="apply-btn"
+          >
+            Apply for Senior Scholarship
           </a>
         </p>
       </section>
@@ -90,38 +101,49 @@ export default function ScholarshipsPage() {
             </tr>
           </tbody>
         </table>
-        <p className="section-label">Eligibility</p>
-        <ol className="eligibility-list">
-          <li>
-            Applying students must be in grades 3–11 at Boyle Road Elementary,
-            Terryville Road Elementary, John F. Kennedy Middle School, or
-            Comsewogue High School for the 2026–2027 school year.
-          </li>
-          <li>
-            Applying students must be in good standing and free of any school
-            suspension.
-          </li>
-          <li>
-            Applying students should be pursuing one of the following areas:
-          </li>
-        </ol>
-        <ul className="eligibility-sublist">
-          <li>
-            MUSIC-related fields (MUSIC – performance, pedagogy, history,
-            theory, composition, education, therapy, business, technology,
-            theater, etc.)
-          </li>
-          <li>
-            ART-related fields (ART – visual arts, history, education, digital
-            arts, fashion, film, etc.)
-          </li>
-          <li>
-            Business and Engineering-related fields (Marketing, Architect)
-          </li>
-        </ul>
+        <table className="scholarship-table">
+          <tbody>
+            <tr>
+              <th scope="row">Eligibility</th>
+              <td>
+                <ol className="table-list">
+                  <li>
+                    Must be in grades 3–11 at Boyle Road Elementary, Terryville
+                    Road Elementary, John F. Kennedy Middle School, or
+                    Comsewogue High School for the 2026–2027 school year.
+                  </li>
+                  <li>
+                    Must be in good standing and free of any school suspension.
+                  </li>
+                  <li>
+                    Should be pursuing one of the following areas:
+                    <ul className="table-sublist">
+                      <li>
+                        MUSIC-related fields (performance, pedagogy, history,
+                        theory, composition, education, therapy, business,
+                        technology, theater, etc.)
+                      </li>
+                      <li>
+                        ART-related fields (visual arts, history, education,
+                        digital arts, fashion, film, etc.)
+                      </li>
+                      <li>
+                        Business and Engineering-related fields (Marketing,
+                        Architecture)
+                      </li>
+                    </ul>
+                  </li>
+                </ol>
+              </td>
+            </tr>
+          </tbody>
+        </table>
         <p className="center-link">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLScir77ruuBlPuoi-X3sfDQvLOyjKDciKPPWahdHYigpSOvm_Q/viewform">
-            APPLY FOR SUMMER STUDY SCHOLARSHIP
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLScir77ruuBlPuoi-X3sfDQvLOyjKDciKPPWahdHYigpSOvm_Q/viewform"
+            className="apply-btn"
+          >
+            Apply for Summer Study Scholarship
           </a>
         </p>
         <p className="subpage-link">
