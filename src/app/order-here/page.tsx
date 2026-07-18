@@ -1,11 +1,63 @@
-import Link from "next/link";
+type School = {
+  name: string;
+  longTitle?: boolean;
+  flowersUrl: string | null;
+  ornamentsUrl: string | null;
+};
 
-const schools = [
-  "Boyle Road Elementary",
-  "Terryville Road Elementary",
-  "JFK Middle Shchool",
-  "Comsewogue High School",
+const schools: School[] = [
+  {
+    name: "Boyle Road Elementary",
+    flowersUrl: null,
+    ornamentsUrl: null,
+  },
+  {
+    name: "Terryville Road Elementary",
+    flowersUrl: null,
+    ornamentsUrl: null,
+  },
+  {
+    name: "JFK Middle School",
+    longTitle: true,
+    flowersUrl: null,
+    ornamentsUrl: null,
+  },
+  {
+    name: "Comsewogue High School",
+    flowersUrl: null,
+    ornamentsUrl: null,
+  },
 ];
+
+function OrderButton({
+  href,
+  label,
+}: {
+  href: string | null;
+  label: string;
+}) {
+  if (!href) {
+    return (
+      <button
+        type="button"
+        className="order-button order-button--disabled"
+        disabled
+      >
+        {label} – Coming Soon
+      </button>
+    );
+  }
+  return (
+    <a
+      href={href}
+      className="order-button"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {label}
+    </a>
+  );
+}
 
 export default function OrderHerePage() {
   return (
@@ -22,38 +74,24 @@ export default function OrderHerePage() {
       <section className="content-card">
         <h2>Order by School</h2>
         <p className="muted-copy">
-          Use the buttons below to start your order. Online checkout links can
-          be updated as school-specific forms are finalized.
+          Use the buttons below to start your order. Links will be activated as
+          school-specific forms are finalized.
         </p>
         <div className="school-grid">
           {schools.map((school) => (
-            <article key={school} className="school-card">
+            <article key={school.name} className="school-card">
               <h3
                 className={
-                  school === "JFK Middle Shchool"
+                  school.longTitle
                     ? "school-card__title school-card__title--long"
                     : "school-card__title"
                 }
               >
-                {school}
+                {school.name}
               </h3>
               <div className="order-buttons">
-                <Link
-                  href="/order-form"
-                  className="order-button"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Concert Flowers
-                </Link>
-                <Link
-                  href="/order-form"
-                  className="order-button"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Drama Ornaments
-                </Link>
+                <OrderButton href={school.flowersUrl} label="Concert Flowers" />
+                <OrderButton href={school.ornamentsUrl} label="Drama Ornaments" />
               </div>
             </article>
           ))}
