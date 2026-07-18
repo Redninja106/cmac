@@ -963,14 +963,16 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
   min-height: 2.8rem;
   background: #122e4c;
   color: #f4efe6;
   text-transform: uppercase;
   letter-spacing: 0.06em;
+  font: inherit;
   font-size: 0.82rem;
   border-radius: 0.2rem;
-  border-bottom: none;
+  border: none;
 }
 
 .order-button:hover {
@@ -980,7 +982,6 @@ a {
 .order-button--disabled {
   opacity: 0.45;
   cursor: not-allowed;
-  pointer-events: none;
 }
 
 .qr-placeholder {

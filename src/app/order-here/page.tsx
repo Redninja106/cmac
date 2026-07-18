@@ -38,9 +38,13 @@ function OrderButton({
 }) {
   if (!href) {
     return (
-      <span className="order-button order-button--disabled" aria-disabled="true">
+      <button
+        type="button"
+        className="order-button order-button--disabled"
+        disabled
+      >
         {label} – Coming Soon
-      </span>
+      </button>
     );
   }
   return (
