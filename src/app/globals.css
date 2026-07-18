@@ -977,6 +977,12 @@ a {
   background: #1a436e;
 }
 
+.order-button--disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 .qr-placeholder {
   margin-top: 0.85rem;
   width: min(170px, 100%);
