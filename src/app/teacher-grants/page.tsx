@@ -10,25 +10,33 @@ export default function TeacherGrantsPage() {
         </p>
       </section>
 
-      <section className="content-card">
-        <h2 className="center-heading">Grant Details</h2>
-        <ul className="info-list">
-          <li>Grant application due by Saturday, May 1, 2027.</li>
-          <li>Selected teacher(s) receive a CMAC grant award.</li>
-          <li>
-            Proposed projects should demonstrate clear benefit to student
-            learning and arts participation.
-          </li>
-        </ul>
-        <p className="section-label">Eligibility</p>
-        <ul className="eligibility-list eligibility-list--letters">
-          <li>A.</li>
-          <li>B.</li>
-          <li>C.</li>
-        </ul>
-        <p>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLScLSr4Da2R51xg59lu_j57lMg5Xd8On3rHcEowwMgNAB9V1ng/viewform">
-            APPLY FOR TEACHER GRANT
+      <section className="content-card scholarship-block">
+        <h2>Grant Details</h2>
+        <table className="scholarship-table">
+          <tbody>
+            <tr>
+              <th scope="row">Application Deadline</th>
+              <td>Saturday, May 1, 2027</td>
+            </tr>
+            <tr>
+              <th scope="row">Award</th>
+              <td>Selected teacher(s) receive a CMAC grant award.</td>
+            </tr>
+            <tr>
+              <th scope="row">Project Criteria</th>
+              <td>
+                Proposed projects should demonstrate clear benefit to student
+                learning and arts participation.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p className="center-link">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLScLSr4Da2R51xg59lu_j57lMg5Xd8On3rHcEowwMgNAB9V1ng/viewform"
+            className="apply-btn"
+          >
+            Apply for Teacher Grant
           </a>
         </p>
       </section>

@@ -650,6 +650,51 @@ a {
 
 .center-link {
   text-align: center;
+  margin-top: 1.5rem;
+}
+
+.apply-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.8rem;
+  padding: 0.6rem 1.75rem;
+  background: #122e4c;
+  color: #f4efe6;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  font-weight: 700;
+  border-radius: 0.2rem;
+  border-bottom: none;
+  transition:
+    background-color 0.16s ease,
+    transform 0.16s ease;
+}
+
+.apply-btn:hover {
+  background: #1a436e;
+  transform: translateY(-1px);
+}
+
+.table-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  line-height: 1.65;
+}
+
+.table-list li {
+  margin-bottom: 0.4rem;
+}
+
+.table-sublist {
+  margin: 0.35rem 0 0;
+  padding-left: 1.25rem;
+  line-height: 1.65;
+}
+
+.table-sublist li {
+  margin-bottom: 0.3rem;
 }
 
 .winner-list {
