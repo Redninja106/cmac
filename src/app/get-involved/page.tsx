@@ -138,6 +138,11 @@ export default function GetInvolvedPage() {
               Fill out our membership application to become a part of CMAC
               today.
             </p>
+            <p className="subpage-link">
+              <a href="#membership-form" className="apply-btn">
+                JOIN CMAC
+              </a>
+            </p>
           </article>
         </div>
       </section>
@@ -207,7 +212,7 @@ export default function GetInvolvedPage() {
         </div>
       </section>
 
-      <section className="content-card">
+      <section className="content-card" id="membership-form">
         <h2>Membership Form</h2>
         <p className="muted-copy">
           Complete the full official CMAC membership form below.
